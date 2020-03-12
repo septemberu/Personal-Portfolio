@@ -1,11 +1,11 @@
 :root {
     box-sizing: border-box;
-    background-color: #dfdfdf;
+    background-color: black;
 }
 
 a > img {
     height: 12rem;
-    margin: 4px;
+    margin: 6px;
 }
 
 button {
@@ -15,4 +15,11 @@ button {
     background-color: cornflowerblue;
     color: white;
     font-weight: 400;
+    border-style: none;
+    background-color: red;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
 }
