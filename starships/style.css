@@ -1,10 +1,17 @@
 :root {
     box-sizing: border-box;
+    background-color: black;
 }
 
 header, footer {
     display:flex;
     justify-content: center;
+    color: white;
+}
+
+header {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .container {

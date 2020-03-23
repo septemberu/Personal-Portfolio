@@ -60,4 +60,4 @@ function populateShipView(shipData) {
 }
 
 
-populateNav(starships)
+populateNav(starships) 
