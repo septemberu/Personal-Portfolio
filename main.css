@@ -16,18 +16,22 @@
 .nav-list {
     display: flex;
     list-style-type: none;
-    font-size: .5rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    
 
 }
 
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
     padding: 2rem;
     text-decoration: none;
     color: white;
+}
+
+.nav-list a:hover {
+    color: black;
 }
 
 #welcome-section {
@@ -61,6 +65,7 @@ h3 {
 }
 #project-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -70,11 +75,12 @@ h3 {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
+    padding-bottom: 5rem;
 }
 
 .fitpic {
     border-radius: 20px;
-
+    padding: 1rem;
 }
 
 #profile-link {
@@ -89,8 +95,8 @@ h3 {
 #contact {
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
     width: 100%;
     flex-wrap: wrap;
 }
