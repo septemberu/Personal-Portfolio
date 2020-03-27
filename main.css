@@ -93,15 +93,16 @@ h3 {
 }
 
 .fitpic {
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 1rem;
 }
+
+
+/* ---  Contact ---*/
 
 #profile-link {
     color: black;
 }
-
-/* ---  Contact ---*/
 
 #con {
     font-family: 'Open Sans Condensed', sans-serif;
