@@ -7,6 +7,17 @@ a > img {
     height: 12rem;
     margin: 6px;
 }
+h1 {
+    font-size: 4rem;
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    color: white;
+}
+
+.Button {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
 button {
     height: 2rem;
@@ -16,10 +27,12 @@ button {
     color: white;
     font-weight: 400;
     border-style: none;
-    background-color: red;
+    background-color: blue;
+    margin-left: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
-h1 {
-    color: white;
-    font-size: 3rem;
+footer {
+    
 }
