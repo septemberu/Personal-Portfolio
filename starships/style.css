@@ -34,3 +34,12 @@ li {
     list-style-type: none;
 }
 
+.header {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 4.6rem;
+}
+
+footer {
+    margin-top: 1.5rem
+}
+
