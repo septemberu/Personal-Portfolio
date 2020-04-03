@@ -6,9 +6,7 @@ header {
     font-family: 'Sacramento', cursive;
     font-size: 3rem;
     color: white;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
+    text-align: center;
 }
 
 textarea {
@@ -16,6 +14,7 @@ textarea {
     height:400px;
     width: 36%;
     border-radius: 5%;
+    align-items: center;
 
 }
 
@@ -24,12 +23,16 @@ textarea {
     margin-left: 8%;
 }
 
+.Button {
+    text-align: center;
+}
+
 button {
     padding-left: 30%;
     padding-right: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 12%;
+    align-items: center;
     background-color: white;
     color: #FF6F90;
     font-size: 1.5rem;
