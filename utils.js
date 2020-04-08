@@ -19,7 +19,7 @@ export function addStarField(element, numStars) {
         let star = document.createElement ('div')
         star.style.setProperty('position', 'absolute')
         star.style.setProperty('width', '1px')
-        star.style.setProperty('width', '1px')
+        star.style.setProperty('height', '1px')
         star.style.setProperty('background-color', 'white')
         let xy = getRandomPosition()
         star.style.left = `${xy[0]}px`
