@@ -6,7 +6,7 @@ const nav = document.querySelector('.nav')
 
 const navList = document.querySelector('.navList')
 
-const shipView = document.querySelector('.shipView')
+const shipView = document.querySelector('#main')
 
 const modalDialog = document.querySelector('.modal')
 const modalButton = document.querySelector('.modal-close')
@@ -62,4 +62,4 @@ function populateShipView(shipData) {
 
 populateNav(starships)
 
-addStarField(document.body, 1000)
+addStarField(document.body, 500)

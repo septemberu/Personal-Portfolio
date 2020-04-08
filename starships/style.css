@@ -10,7 +10,6 @@ header, footer {
 }
 
 header {
-    margin-top: 1rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -22,9 +21,10 @@ header {
 .nav {
     border: solid 2px white .7;
     padding-right: 1rem;
-    margin-left: 6%;
+    margin-left: 1%;
     background-color: rgb(255, 255, 255, .7);
-
+    border-radius: 10px;
+    margin-right: 3%;
 }
 
 .navList {
@@ -40,8 +40,10 @@ a {
 li {
     list-style-type: none;
     padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .header {
