@@ -4612,6 +4612,6 @@ export const senators = [
                 ]
             }
         ]
-      }
+    }
 
 ]
