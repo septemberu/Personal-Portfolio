@@ -2,15 +2,15 @@ import { senators } from '../Data/senators.js'
 
 // this is all about filter, map, reduce
 
-const container =document.querySelector('.constianer')
+const container = document.querySelector('.constainer')
 
 const filterSenators = (prop, value) => {
-    return senators.filter (senator => senator[prop] === value)
+    return senators.filter(senator => senator[prop] === value)
 }
 
 function simplifiedSenators(senatorArray) {
     return senatorArray.map(senator => {
-        let middleName = senator.middle_name ? ` $(senator.middle_name) ` : ``
+        let middleName = senator.middle_name ? ` $(senator.middle_name) ` : ` `
         return {
             id: senator.id,
             name: `${senator.first_name}${middleName}${senator.last_name}`,
@@ -24,7 +24,7 @@ function simplifiedSenators(senatorArray) {
 }
 
 function populateContainer(smallSenatorsArray) {
-    return smallSenatorsArray.foreach(senator => {
+    return smallSenatorsArray.forEach(senator => {
 
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
@@ -50,7 +50,7 @@ const mostSeniority = simplifiedSenators(democrats).reduce(
 
 const mostMissedVotes = simplifiedSenators(senators).reduce(
     (acc, senator) => {
-        return acc.missed_votes_pct> senator.missed_votes_pct ? acc: senator 
+        return acc.missed_votes_pct > senator.missed_votes_pct ? acc: senator 
     }
 )
 
