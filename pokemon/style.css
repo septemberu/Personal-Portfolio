@@ -1,16 +1,15 @@
 .pokeContainer {
     display:flex;
-    flex: wrap;
-    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-body { font-family: sans-serif; }
 
 .scene {
   width: 200px;
   height: 260px;
   border: 1px solid #CCC;
-  margin: 40px 0;
+  margin: 10px;
   perspective: 600px;
 }
 
@@ -47,4 +46,3 @@ transform-style: preserve-3d;
   background: blue;
   transform: rotateY(180deg);
 }
-    
