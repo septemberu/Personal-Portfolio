@@ -15,15 +15,15 @@ getPokeData("https://pokeapi.co/api/v2/pokemon")
 
 function populatePokeCards (pokeArray) {
     pokeArray.forEach(pokemon => {
+    let pokeScene = document.createElement('div')
+    pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
-    let pokeContent = document.createElement('div')
-    pokeContent.className = 'content'
     let pokeFront = document.createElement('div')
-    pokeFront.className = 'front'
+    pokeFront.className = 'card__face card__face--front'
     pokeFront.textContent = 'Front'
     let pokeBack = document.createElement('div')
-    pokeBack.className = 'back'
+    pokeBack.className = 'card__face card__face--back'
     pokeBack.textContent = "Back"
 
     pokeContent.appendChild(pokeFront)
@@ -33,13 +33,10 @@ function populatePokeCards (pokeArray) {
     })
 }
 
-/* <div class="card">
-<div class="content">
-<div class="front">
-  Front
+/* <div class="scene">
+  <div class="card">
+    <div class="card__face card__face--front">front</div>
+    <div class="card__face card__face--back"><div><p>Hi,I'm here on the back</p></div></div>
+  </div>
 </div>
-<div class="back">
-  Back!
-</div>
-</div>
-</div> */
+<p>Click card to flip.</p>*/
