@@ -67,7 +67,7 @@ function populateCardFront(pokeMon) {
 function populateCardBack(pokeMon) {
     let cardBack = document.createElement('div')
     cardBack.className = 'card__face card__face--back'
-    cardBack.textContent = 'Back'
+    cardBack.textContent = pokeMon.weight
     return cardBack
 }
 
