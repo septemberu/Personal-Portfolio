@@ -2,6 +2,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 2.2rem;
+    font-family: pokemon;
+    color: blue;
+}
+
+#newButton, #startButton{
+    background-color: red;
+    color: white;
+    padding:16px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-size: .8rem;
+    font-weight: bolder;
 
 }
 
@@ -13,9 +26,9 @@ header {
 
 
 .scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #CCC;
+  width: 260px;
+  height: 310px;
+  border: none;
   margin: 10px;
   perspective: 600px;
   border-radius: 15px;
@@ -39,19 +52,22 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: white;
   text-align: center;
   font-size: 1.2rem;
   backface-visibility: hidden;
+  
 }
 
 .card__face--front {
-  background: red;
+  background: blue;
   border-radius: 15px;
+  color: white;
 }
 
 .card__face--back {
-  background: blue;
+  background: yellow;
   transform: rotateY(180deg);
   border-radius: 15px;
+  color: black
+  
 }
