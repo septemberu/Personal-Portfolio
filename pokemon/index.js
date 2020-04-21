@@ -25,37 +25,47 @@ async function getAPIData(url) {
 
 getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=25').then(
     (data) => {
-        for (const pokemon of data.results){
+        for (const pokemon of data.results) {
             getAPIData(pokemon.url).then(
                 (pokeData) => {
                     populatePokeCard(pokeData)
                 }
             )
         }
-        
+
     }
 )
 
 
 function populatePokeCard(singlePokemon) {
-        let pokeScene = document.createElement('div')
-        pokeScene.className = 'scene'
-        let pokeCard = document.createElement('div')
-        pokeCard.className = 'card'
-        pokeCard.addEventListener('click', function () {
-            pokeCard.classList.toggle('is-flipped');
-        })
-        let pokeFront = document.createElement('div')
-        pokeFront.className = 'card__face card__face--front'
-        pokeFront.textContent = singlePokemon.name
-        let pokeBack = document.createElement('div')
-        pokeBack.className = 'card__face card__face--back'
-        pokeBack.textContent = "Back"
+    let pokeScene = document.createElement('div')
+    pokeScene.className = 'scene'
+    let pokeCard = document.createElement('div')
+    pokeCard.className = 'card'
+    pokeCard.addEventListener('click', function () {
+        pokeCard.classList.toggle('is-flipped');
+    })
+    let pokeFront = populateCardFront(singlePokemon)
+    let pokeBack = populateCardBack(singlePokemon)
 
-        pokeCard.appendChild(pokeFront)
-        pokeCard.appendChild(pokeBack)
-        pokeScene.appendChild(pokeCard)
-        pokeContainer.appendChild(pokeScene)
+    pokeCard.appendChild(pokeFront)
+    pokeCard.appendChild(pokeBack)
+    pokeScene.appendChild(pokeCard)
+    pokeContainer.appendChild(pokeScene)
+}
+
+function populateCardFront(pokeMon) {
+    let cardFront = document.createElement('div')
+    cardFront.className = 'card__face card__face--front'
+    cardFront.textContent = pokeMon.name
+    return cardFront
+}
+
+function populateCardBack(pokeMon) {
+    let cardBack = document.createElement('div')
+    cardBack.className = 'card__face card__face--back'
+    cardBack.textContent = 'Back'
+    return cardBack
 }
 
 /* <div class="scene">
