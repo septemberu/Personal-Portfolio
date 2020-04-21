@@ -57,7 +57,10 @@ function populatePokeCard(singlePokemon) {
 function populateCardFront(pokeMon) {
     let cardFront = document.createElement('div')
     cardFront.className = 'card__face card__face--front'
-    cardFront.textContent = pokeMon.name
+    cardFront.textContent = `${pokeMon.name} ${pokeMon.id}`
+    let frontImage = document.createElement('img')
+    frontImage.src = '../images/001.png'
+    cardFront.appendChild(frontImage)
     return cardFront
 }
 
