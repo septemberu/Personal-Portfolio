@@ -88,15 +88,15 @@ class Pokemon {
         this.width = weight
         this.name = name
         this.stats = stats
-        this.id = 900
+        this.id = 800
     }
 }
 
 function addPokemon() {
-    let newPokemon = new Pokemon(50, 25, 'Thoremon', [
+    let newPokemon = new Pokemon(50, 25, 'Septator', [
         { 
             stat: 
-            { name: 'thunder belly' } 
+            { name: 'sneaky like a snake' } 
         }])
     populatePokeCard(newPokemon)
 }
