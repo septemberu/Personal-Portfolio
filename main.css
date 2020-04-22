@@ -9,7 +9,7 @@
     height: 5.8rem;
     display: flex;
     justify-content: flex-end;
-    background-color: pink;
+    background-color: lightblue;
     position: fixed;
 
 }
@@ -58,7 +58,7 @@ h1 {
 
 h3 {
     font-size: 2rem;
-    color: pink;
+    color:lightblue;
 
 }
 
@@ -69,7 +69,7 @@ h3 {
 }
 
 #projects h1 {
-    color: pink;
+    color:lightblue;
     text-align: center;
     padding-right: 5%;
     padding-left: 5%;
@@ -144,7 +144,7 @@ footer {
 }
 
 #footer {
-    background-color: pink;
+    background-color: lightblue;
     width: 100%;
     height: 60px;
 }
