@@ -25,7 +25,7 @@
     display: block;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 2rem;
     text-decoration: none;
     color: white;
@@ -101,8 +101,18 @@ h3 {
 
 /* ---  Contact ---*/
 
+ h2 {
+    font-size: 3.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 3rem;
+    color:white;
+
+}
+
+
 #profile-link {
     color: black;
+  
 }
 
 #con {
@@ -112,11 +122,14 @@ h3 {
 
 #contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 4rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 5rem;
     width: 100%;
-    flex-wrap: wrap;
+    background-color: lightgray;
+    
 }
 
 a {
@@ -137,16 +150,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
+    padding-bottom: 4px;
 }
 
 #footer {
     background-color: lightblue;
     width: 100%;
-    height: 60px;
+    height: 8%;
 }
 
 /* 1200px / 16px = 75em */
