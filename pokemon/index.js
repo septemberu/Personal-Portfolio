@@ -78,45 +78,56 @@ function getImageFileName(pokemon) {
 function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = 'card__face card__face--back'
-   let abilityList = document.createElement('ul')
-   abilityList.textContent = 'Abilities'
-   pokemon.abilities.forEach(ability => {
-       let abilityName = document.createElement('li')
-       abilityName.textContent = ability.ability.name
-       abilityList.appendChild(abilityName)
-   })
-   let moveList = document.createElement('p')
-   moveList.textContent = (`Level 0 Moves: ${getPokemonMoves(pokemon , 0).length}`)
-   cardBack.appendChild(abilityList)
-   cardBack.appendChild(moveList)
+    let abilityList = document.createElement('ul')
+    abilityList.textContent = 'Abilities'
+    pokemon.abilities.forEach(ability => {
+        let abilityName = document.createElement('li')
+        abilityName.textContent = ability.ability.name
+        abilityList.appendChild(abilityName)
+    })
+    let moveList = document.createElement('p')
+    moveList.textContent = (`Level 0 Moves: ${getPokemonMoves(pokemon, 0).length}`)
+    cardBack.appendChild(abilityList)
+    cardBack.appendChild(moveList)
     return cardBack
 }
 
 function getPokemonMoves(pokemon, levelLearnedAt) {
-   console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
-   return pokemon.moves.filter( move => {
-       return move.version_group_details[0].level_learned_at === levelLearnedAt
-   })
+    //console.log(`Name: ${pokemon.name} Number of Moves: ${pokemon.moves.length}`)
+    return pokemon.moves.filter(move => {
+        return move.version_group_details[0].level_learned_at === levelLearnedAt
+    })
 }
 
 
 
 class Pokemon {
-    constructor(height, weight, name, abilities) {
+    constructor(height, weight, name, abilities, moves) {
         this.height = height
         this.width = weight
         this.name = name
         this.abilities = abilities
+        this.moves = moves
         this.id = 800
     }
 }
 
 function addPokemon() {
     let newPokemon = new Pokemon(50, 25, 'Septator', [
-        { 
-    
-                ability: 
-            { name: 'sneaky like a snake' } 
-        }])
+        {
+            ability:
+                { name: 'sneaky like a snake' }
+        }], [
+        {
+            move: {
+                name: "Disappearing"
+            },
+            version_group_details: [
+                {
+                    level_learned_at: 0
+                }
+            ]
+        }
+    ])
     populatePokeCard(newPokemon)
 }
