@@ -1,16 +1,14 @@
+:root {
+  background-color: black;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 4%;
-    margin-bottom: 3%;
+    padding-bottom: 50px,
 }
-
-p {
-  font-size: 1rem;
-  color: black;
-}
-
 
 #newButton, #startButton{
     background-color: red;
@@ -20,6 +18,8 @@ p {
     margin-bottom: 50px;
     font-size: .8rem;
     font-weight: bolder;
+    border: none;
+   margin-top: 30px;
 
 }
 
@@ -60,21 +60,23 @@ p {
   text-align: center;
   font-size: 1.2rem;
   backface-visibility: hidden;
-  border: solid 7px yellow;
+  
   
 }
 
 .card__face--front {
-  background: blue;
+  background: #3767B0;
   border-radius: 15px;
   color: white;
+  border: solid 7px #1E2D59;
 }
 
 .card__face--back {
-  background: blue;
+  background: #F2B90C;
   transform: rotateY(180deg);
   border-radius: 15px;
   color: white;
+  border: solid 7px #F2A30F;
   
 }
 
@@ -91,7 +93,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: bolder;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .card__face img {
