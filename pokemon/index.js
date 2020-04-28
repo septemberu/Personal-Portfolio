@@ -116,17 +116,17 @@ function addPokemon() {
     let newPokemon = new Pokemon(50, 25, 'Thoremon', [
         {
             ability:
-                { name: 'Quiet' }
+                { name: 'Thunderbelly' }
         },
         {
             ability:
-                { name: 'Fast' }
+                { name: 'Sneaky' }
         }
         ], 
         [
             {
         move: {
-            name: "Disappearing"
+            name: "Throwing Lightning"
         },
         version_group_details: [
             {
