@@ -113,7 +113,7 @@ class Pokemon {
 }
 
 function addPokemon() {
-    let newPokemon = new Pokemon(50, 25, 'Septator', [
+    let newPokemon = new Pokemon(50, 25, 'Thoremon', [
         {
             ability:
                 { name: 'Quiet' }
