@@ -5,7 +5,9 @@
 
 a > img {
     height: 12rem;
-    margin: 6px;
+    margin: 10px;
+    border-radius: 6px;
+    border: solid 1px white;
 }
 
 h1 {
