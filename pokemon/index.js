@@ -79,7 +79,7 @@ function populateCardBack(pokemon) {
     let cardBack = document.createElement('div')
     cardBack.className = 'card__face card__face--back'
     let abilityList = document.createElement('ul')
-    abilityList.textContent = 'Abilities'
+    abilityList.textContent = 'Abilities:'
     pokemon.abilities.forEach(ability => {
         let abilityName = document.createElement('li')
         abilityName.textContent = ability.ability.name
@@ -116,18 +116,24 @@ function addPokemon() {
     let newPokemon = new Pokemon(50, 25, 'Septator', [
         {
             ability:
-                { name: 'sneaky like a snake' }
-        }], [
+                { name: 'Quiet' }
+        },
         {
-            move: {
-                name: "Disappearing"
-            },
-            version_group_details: [
-                {
-                    level_learned_at: 0
-                }
-            ]
+            ability:
+                { name: 'Fast' }
         }
-    ])
-    populatePokeCard(newPokemon)
+        ], 
+        [
+            {
+        move: {
+            name: "Disappearing"
+        },
+        version_group_details: [
+            {
+                level_learned_at: 0
+            }
+        ]
+    }
+])
+populatePokeCard(newPokemon)
 }
