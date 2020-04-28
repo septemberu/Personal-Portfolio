@@ -120,13 +120,13 @@ function addPokemon() {
         },
         {
             ability:
-                { name: 'Sneaky' }
+                { name: 'Lightning' }
         }
         ], 
         [
             {
         move: {
-            name: "Throwing Lightning"
+            name: "Super Fast"
         },
         version_group_details: [
             {
