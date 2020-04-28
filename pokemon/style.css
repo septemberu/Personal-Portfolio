@@ -2,9 +2,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2.2rem;
-    font-family: pokemon;
-    color: blue;
+    padding-top: 4%;
+    margin-bottom: 3%;
 }
 
 p {
