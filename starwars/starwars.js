@@ -35,9 +35,9 @@ function populateDOM(characters) {
     removeChildren(gallery)
     characters.forEach(person => {
         let imageNum = getLastNumber(person.url)
-        let personAnchor = document.createElement("a")
+        let personAnchor = document.createElement('a')
         personAnchor.href = "#"
-        let personImg = document.createElement("img")
+        let personImg = document.createElement('img')
         personImg.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
         personImg.addEventListener('error', (event) => {

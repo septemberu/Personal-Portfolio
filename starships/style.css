@@ -10,12 +10,14 @@ header, footer {
 }
 
 header {
+    padding-top: 2rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
 .container {
     display: flex;
+    
 }
 
 .nav {
@@ -25,6 +27,7 @@ header {
     background-color: rgb(255, 255, 255, .7);
     border-radius: 10px;
     margin-right: 3%;
+    border: double 8px white;
 }
 
 .navList {
@@ -34,6 +37,7 @@ header {
 a {
     text-decoration: none;
     font-size: 1.25rem;
+    color: maroon;
 
 }
 
@@ -54,6 +58,13 @@ li {
 .card-content {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+.card {
+    border-radius: 15px;
+    background-color:maroon;
+
 }
 
 footer {
